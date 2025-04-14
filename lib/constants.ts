@@ -2,6 +2,8 @@ export const menuCategories = [
   {
     id: "starters",
     name: "Starters",
+    description:
+      "Begin your meal with our delightful starters, perfect for sharing or enjoying solo.",
     items: [
       {
         id: "1",
@@ -10,6 +12,9 @@ export const menuCategories = [
           "Toasted bread topped with tomatoes, garlic, and fresh basil",
         price: "8.99",
         image: "/bruschetta.jpg?height=150&width=300&text=Bruschetta",
+        isVegan: true,
+        isPopular: true,
+        prepTime: "10-15 minutes",
       },
       {
         id: "2",
@@ -17,6 +22,9 @@ export const menuCategories = [
         description: "Crispy fried calamari served with marinara sauce",
         price: "12.99",
         image: "/calamari.jpg?height=150&width=300&text=Calamari",
+        isVegan: false,
+        isPopular: true,
+        prepTime: "15-20 minutes",
       },
       {
         id: "3",
@@ -25,12 +33,17 @@ export const menuCategories = [
           "Creamy spinach and artichoke dip served with tortilla chips",
         price: "10.99",
         image: "/SpinachArtichokeDip.png?height=150&width=300&text=Spinach+Dip",
+        isVegan: false,
+        isPopular: false,
+        prepTime: "10-15 minutes",
       },
     ],
   },
   {
     id: "mains",
     name: "Main Courses",
+    description:
+      "Savor our main courses, crafted with the finest ingredients and flavors.",
     items: [
       {
         id: "4",
@@ -38,6 +51,9 @@ export const menuCategories = [
         description: "Handmade pasta with our special sauce and fresh herbs",
         price: "18.99",
         image: "/pasta.jpg?height=150&width=300&text=Signature+Pasta",
+        isVegan: false,
+        isPopular: true,
+        prepTime: "20-25 minutes",
       },
       {
         id: "5",
@@ -46,6 +62,9 @@ export const menuCategories = [
           "Fresh salmon fillet grilled to perfection with seasonal vegetables",
         price: "24.99",
         image: "/salmon3.jpg?height=150&width=300&text=Grilled+Salmon",
+        isVegan: false,
+        isPopular: false,
+        prepTime: "25-30 minutes",
       },
       {
         id: "6",
@@ -54,6 +73,9 @@ export const menuCategories = [
           "Premium beef patty with artisanal cheese and house-made sauce",
         price: "16.99",
         image: "/burger.jpg?height=150&width=300&text=Gourmet+Burger",
+        isVegan: false,
+        isPopular: true,
+        prepTime: "15-20 minutes",
       },
       {
         id: "7",
@@ -63,12 +85,16 @@ export const menuCategories = [
         price: "19.99",
         image:
           "/ChickenParmesan.jpg?height=150&width=300&text=Chicken+Parmesan",
+        isVegan: false,
+        isPopular: false,
+        prepTime: "20-25 minutes",
       },
     ],
   },
   {
     id: "desserts",
     name: "Desserts",
+    description: "Indulge in our sweet treats to end your meal on a high note.",
     items: [
       {
         id: "8",
@@ -77,6 +103,9 @@ export const menuCategories = [
           "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream",
         price: "8.99",
         image: "/Tiramisu.png?height=150&width=300&text=Tiramisu",
+        isVegan: false,
+        isPopular: true,
+        prepTime: "10-15 minutes",
       },
       {
         id: "9",
@@ -86,6 +115,9 @@ export const menuCategories = [
         price: "9.99",
         image:
           "/ChocolateLavaCake.png?height=150&width=300&text=Chocolate+Lava+Cake",
+        isVegan: false,
+        isPopular: false,
+        prepTime: "15-20 minutes",
       },
       {
         id: "10",
@@ -94,12 +126,17 @@ export const menuCategories = [
           "Creamy cheesecake with a graham cracker crust, topped with berry compote",
         price: "7.99",
         image: "/newyorkcheesecake.png?height=150&width=300&text=Cheesecake",
+        isVegan: false,
+        isPopular: false,
+        prepTime: "10-15 minutes",
       },
     ],
   },
   {
     id: "drinks",
     name: "Drinks",
+    description:
+      "Quench your thirst with our selection of refreshing beverages.",
     items: [
       {
         id: "11",
@@ -108,6 +145,9 @@ export const menuCategories = [
           "Deliciously crafted soft drinks made with high-quality ingredients for a burst of flavor in every sip!",
         price: "12.99",
         image: "/SoftDrink.jpg?height=150&width=300&text=Craft+Cocktails",
+        isVegan: true,
+        isPopular: false,
+        prepTime: "5-10 minutes",
       },
       {
         id: "12",
@@ -116,6 +156,9 @@ export const menuCategories = [
           "A curated selection of invigorating energy drinks to fuel your day with maximum energy and focus!",
         price: "From $9.99",
         image: "/energydrink.jpg?height=150&width=300&text=Wine",
+        isVegan: true,
+        isPopular: false,
+        prepTime: "5-10 minutes",
       },
       {
         id: "13",
@@ -124,6 +167,9 @@ export const menuCategories = [
           "Espresso, cappuccino, latte, and other coffee specialties",
         price: "From $4.99",
         image: "/coffee.jpg?height=150&width=300&text=Coffee",
+        isVegan: false,
+        isPopular: false,
+        prepTime: "5-10 minutes",
       },
     ],
   },
