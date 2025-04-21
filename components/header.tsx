@@ -46,9 +46,9 @@ export default function Header() {
 
         {/* Navigation - Centered */}
         <nav className="hidden md:flex flex-1 justify-center items-center gap-8 text-gray-700 text-sm font-medium">
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <Link
-              key={link.href}
+              key={index}
               href={link.href}
               className="relative group transition-all duration-300 hover:text-indigo-700"
             >
@@ -81,9 +81,9 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden mt-2 rounded-xl bg-white/90 backdrop-blur-md shadow-md px-6 py-4">
           <nav className="flex flex-col gap-4 text-gray-700 font-medium">
-            {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
               <Link
-                key={link.href}
+                key={index}
                 href={link.href}
                 className="hover:text-primary transition-colors"
               >

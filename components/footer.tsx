@@ -10,7 +10,6 @@ const footerLinks = [
   { name: "Careers", href: "#" },
   { name: "Blog", href: "#" },
   { name: "FAQs", href: "#" },
-  
 ];
 
 const socialLinks = [
@@ -53,8 +52,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-3">
-              {footerLinks.slice(0, 3).map((link) => (
-                <li key={link.href}>
+              {footerLinks.slice(0, 3).map((link, index) => (
+                <li key={index}>
                   <Link
                     href={link.href}
                     className="text-indigo-100 hover:text-white transition-colors duration-300"
@@ -70,8 +69,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Resources</h3>
             <ul className="space-y-3">
-              {footerLinks.slice(3).map((link) => (
-                <li key={link.href}>
+              {footerLinks.slice(3).map((link, index) => (
+                <li key={index}>
                   <Link
                     href={link.href}
                     className="text-indigo-100 hover:text-white transition-colors duration-300"
@@ -79,7 +78,7 @@ export default function Footer() {
                     {link.name}
                   </Link>
                 </li>
-              ))}              
+              ))}
             </ul>
           </div>
 
