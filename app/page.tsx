@@ -273,7 +273,7 @@ export default function Home() {
               Download our app or call now to try our voice ordering system.
             </p>
             <div className="mt-8 flex flex-col gap-4 min-[400px]:flex-row justify-center">
-              <Link href="/download">
+              <Link href="#">
                 <Button
                   size="lg"
                   className="bg-white text-md text-indigo-800 hover:bg-gray-100 hover:font-semibold transition-all duration-300"

@@ -82,7 +82,7 @@ export default function AboutPage() {
                       View Menu
                     </Button>
                   </Link>
-                  <Link href="/reservations">
+                  <Link href="#">
                     <Button
                       size="lg"
                       variant="outline"

@@ -26,7 +26,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { orderSteps } from "@/lib/constants";
 
-
 export default function OrderPage() {
   const [orderNumber, setOrderNumber] = useState("");
   const [isTracking, setIsTracking] = useState(false);
@@ -356,7 +355,7 @@ export default function OrderPage() {
                   Contact Support
                 </Button>
               </Link>
-              <Link href="/faq">
+              <Link href="#">
                 <Button
                   size="lg"
                   className="bg-white text-md text-indigo-800 hover:bg-gray-100 hover:font-semibold transition-all duration-300"
